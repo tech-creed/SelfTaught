@@ -1,18 +1,19 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;1,100;1,300&display=swap");
 
 body {
-  font-family: "Poppins";
-  font-weight: 300;
+  overflow-x: hidden;
 }
 
 * {
+  font-family: "Poppins";
+  font-weight: 300;
   margin: 0;
 }
 
 a {
-  text-decoration: none;
+  text-decoration: none !important;
 }
 
 a:hover {
-  text-decoration: none;
+  text-decoration: none !important;
 }
