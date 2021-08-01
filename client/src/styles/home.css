@@ -1,0 +1,91 @@
+body {
+  overflow-x: hidden;
+}
+
+#top_shade {
+  position: absolute;
+  width: 100vw;
+  top: 0;
+  z-index: 1;
+  opacity: 0.95;
+}
+
+.main-content {
+  position: absolute;
+  top: 130px;
+  left: 120px;
+  font-size: 30px;
+  z-index: 3;
+}
+
+.Icon-Div {
+  position: absolute;
+  height: 100vh;
+  width: 100vw;
+}
+
+.icon-1 img {
+  position: absolute;
+  top: 0;
+  left: 0%;
+  width: 100%;
+  height: 100%;
+  animation: icon_1 14s linear infinite;
+}
+
+.icon-1-1 img {
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  animation: icon_1_1 14s linear infinite;
+}
+
+.icon-2 img {
+  position: absolute;
+  top: 0;
+  right: 0%;
+  width: 100%;
+  height: 100%;
+  animation: icon_2 20s linear infinite;
+}
+
+.icon-2-2 img {
+  position: absolute;
+  top: 0;
+  right: -100%;
+  width: 100%;
+  height: 100%;
+  animation: icon_2_2 20s linear infinite;
+}
+
+@keyframes icon_1 {
+  100% {
+    left: 100%;
+  }
+}
+
+@keyframes icon_1_1 {
+  100% {
+    left: 0%;
+  }
+}
+
+@keyframes icon_2 {
+  100% {
+    right: 100%;
+  }
+}
+
+@keyframes icon_2_2 {
+  100% {
+    right: 0%;
+  }
+}
+
+@media (min-width: 768px) {
+}
+
+@media (max-width: 768px) {
+}

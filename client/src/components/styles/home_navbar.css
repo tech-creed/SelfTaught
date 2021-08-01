@@ -1,0 +1,21 @@
+.navbar {
+  position: absolute;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  z-index: 2;
+}
+
+.logo {
+  margin-left: 10px;
+}
+
+.authentication_links {
+  align-self: center;
+}
+
+.authentication_links a {
+  padding-right: 32px;
+  font-size: 22px;
+  color: #f60;
+}
