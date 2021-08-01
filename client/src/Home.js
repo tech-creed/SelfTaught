@@ -1,7 +1,7 @@
-import "./styles/home.css";
-import Icon1 from "./img/Land_Icon_1.png";
-import Icon2 from "./img/Land_Icon_2.png";
-import Shade from "./img/top_shade.png";
+import "./assets/styles/home.css";
+import Icon1 from "./assets/images/Land_Icon_1.png";
+import Icon2 from "./assets/images/Land_Icon_2.png";
+import Shade from "./assets/images/top_shade.png";
 //import Logo from "./img/logo.png";
 
 const LandingPage = () => {
@@ -27,10 +27,12 @@ const LandingPage = () => {
       </div>
 
       <div className="main-content">
-        <h1>Lorem Ispum</h1>
-        <p>Proin egestas arcu scelerisque ligula dapibus laoreet. Phasellus</p>
-        <p>non massa ac diam condimentum dictum. Curabitur suscipit</p>
-        <p>eros gravida ultrices</p>
+        <h1>Teach Yourself</h1>
+        <p>
+          Proin egestas arcu scelerisque ligula dapibus laoreet. Phasellus non
+          massa ac diam condimentum dictum. Curabitur suscipit eros gravida
+          ultrices
+        </p>
       </div>
     </div>
   );

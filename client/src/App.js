@@ -1,7 +1,7 @@
 import LandingPage from "./Home";
 import Navbar from "./components/Home_NavBar.js";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
-import "./styles/app.css";
+import "./assets/styles/app.css";
 
 function App() {
   return (
