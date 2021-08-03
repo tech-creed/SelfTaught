@@ -1,0 +1,179 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+#ps{
+  text-align:right;
+  width:80%;
+  margin:0 auto;
+  margin-bottom: 5px;
+  display:none;
+}
+
+#tilt-container{
+  display: none;
+  
+}
+
+
+#signin-form{
+
+
+  width:100%;
+  
+  
+ 
+}
+#signin-form input{
+   
+  padding-left:10px;
+  border: 1px solid rgb(37, 37, 37);
+  margin:0 auto;
+  height:50px;
+  width:80%;
+  margin-bottom: 25px;
+  
+}
+.sps{
+  color:rgb(130, 194, 2)
+}
+.wps{
+  color:red
+}
+#cps{
+  text-align:left;
+  width:80%;
+  margin:0 auto;
+  margin-bottom: 25px;
+  display:none;
+}
+
+#signin-btn{
+  border:none;
+  border-radius: 20px;
+  background-color:#9ee0d4;
+  font-size: large;
+  margin:0 auto;
+  
+  width:80%;
+  height:40px;
+  
+
+}
+#form-hr{
+    
+  width:80%;
+  margin:0 auto;
+  margin-top:25px;
+  margin-bottom:25px;
+ 
+
+}
+
+@media only screen and (min-width: 768px){
+  #signin-row{
+    height: 100vh;
+    width: 100%
+  }
+  
+  #signin-img{
+    width:80%;
+    height:100%;
+    
+  }
+  #tilt-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width:100%;
+    height: 100%;
+  }
+  
+  #google-btn{
+    
+   
+    width:80%;
+    height:50px;
+    margin:0 auto;
+  }
+  #form-hr{
+    
+    width:80%;
+    margin-top:25px;
+    margin-bottom:25px;
+  
+  }
+  #signin-form{
+    display:flex;
+    flex-direction: column;
+    width:100%;
+    
+    
+   
+  }
+  #cps{
+    text-align:left;
+    width:80%;
+    margin:0 auto;
+    margin-bottom: 25px;
+    display:none;
+  }
+  
+  #signin-btn{
+    border:none;
+    border-radius: 20px;
+    background-color:#9ee0d4;
+    font-size: large;
+    
+    width:80%;
+    height:50px;
+    
+  
+  }
+  #signin-form input{
+   
+    padding-left:10px;
+    margin-bottom: 25px;
+    width:80%;
+    height:50px;
+    
+  }
+  .sps{
+    color:rgb(135, 196, 15)
+  }
+  .wps{
+    color:red
+  }
+  .material-icons{
+    cursor:pointer;
+  }
+  #signin-col-2{
+    display: flex;
+    align-items:center;
+    justify-content: center;
+  }
+  
+  #ps{
+    text-align:right;
+  width:80%;
+  margin:0 auto;
+  margin-bottom: 5px;
+  display: none;
+  }
+  #signin-btn:hover{
+    background-color: #27e3d6;
+    color:white;
+    font-weight: 700;
+  
+  }
+}
+
