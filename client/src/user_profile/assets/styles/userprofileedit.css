@@ -1,0 +1,44 @@
+.user-profile-edit .profile-img img {
+  width: 75%;
+  background-color: yellowgreen;
+  border-radius: 22px;
+  padding: 4px;
+}
+
+.user-profile-edit .profile-img {
+  text-align: center;
+  align-self: center;
+}
+
+.user-profile-edit .profile-img input {
+  margin-top: 18px;
+  width: 50%;
+}
+.user-profile-edit .names-bio .details .inp-field {
+  margin-bottom: 16px;
+}
+.user-profile-edit .names-bio .details textarea,
+input {
+  width: 100%;
+  resize: none;
+}
+
+.user-profile-edit .names-bio .form-btns .upload-profile-img-label {
+  position: relative;
+  padding: 8px;
+  background-color: rgb(202, 90, 46);
+  border-radius: 16px;
+}
+.user-profile-edit .names-bio .form-btns .upload-profile-img-label:hover {
+  color: rgb(202, 90, 46);
+  background-color: aqua;
+}
+.user-profile-edit .names-bio .form-btns {
+  display: flex;
+  justify-content: space-around;
+}
+
+.user-profile-edit .social-links .social-link .social-link-ico {
+  text-align: center;
+  align-self: center;
+}
