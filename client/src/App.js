@@ -1,18 +1,17 @@
-import LandingPage from "./Home";
-import HNavbar from "./components/Home_NavBar.js";
-import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
-import "./assets/styles/app.css";
-
+import logo from './logo.svg';
+import './App.css';
+import Signin from "./components/Signin"
+import { Provider } from 'react-redux'
+import store from './Store';
 function App() {
   return (
-    <Router>
-      <Switch>
-        <Route exact path="/">
-          <HNavbar />
-          <LandingPage />
-        </Route>
-      </Switch>
-    </Router>
+    <Provider store={store}>
+      <div className="App">
+        <Signin />
+      </div>
+
+    </Provider>
+    
   );
 }
 
