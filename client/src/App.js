@@ -1,5 +1,5 @@
 import LandingPage from "./Home";
-import Navbar from "./components/Home_NavBar.js";
+import HNavbar from "./components/Home_NavBar.js";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import "./assets/styles/app.css";
 import UserProfileEdit from "./user_profile/UserProfileEdit";
@@ -13,12 +13,11 @@ function App() {
       <Router>
         <Switch>
           <Route exact path="/">
-            <Navbar />
+            <HNavbar />
             <LandingPage />
           </Route>
 
           <Route exact path="/signin">
-            <Navbar />
             <Signin />
           </Route>
 
