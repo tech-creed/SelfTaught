@@ -3,15 +3,12 @@ import "./assets/styles/userprofileedit.css";
 import { useState } from "react";
 
 const UserProfileEdit = () => {
-  const [linkico, setLinkIco] = useState("link");
-  const [social_link_url, setSocial_link_url] = useState("");
   const [proimg, setProImg] = useState(dummy_usr_img);
+  const [social_link_urls, setSocial_link_urls] = useState([]);
 
   /*urls.forEach(url => console.log(url.replace(/.+\/\/|www.|\..+/g, '')))*/
-  const add_social_link = () => {
-    var web = social_link_url.replace(/.+\/\/|www.|\..+/g, "");
-    console.log(web);
-    setLinkIco(web);
+  const link_2_sitename = (link) => {
+    return link.replace(/.+\/\/|www.|\..+/g, "");
   };
 
   const profileimg_uploaded = (e) => {
@@ -38,7 +35,7 @@ const UserProfileEdit = () => {
               </div>
               <div className="inp-field">
                 <div>Your Role</div>
-                <input type="text" />
+                <input type="text" placeholder="seperate with , " />
               </div>
               <div className="inp-field">
                 <div>BIO</div>
@@ -66,25 +63,8 @@ const UserProfileEdit = () => {
         </div>
       </div>
 
-      <h3>Social Links</h3>
-      <div className="social-links">
-        <div className="row social-link">
-          <div className="col-md-1 social-link-ico">
-            <i className={`fab fa-${linkico}`} aria-hidden="true"></i>
-          </div>
-          <div className="col-md-10">
-            <input
-              type="text"
-              value={social_link_url}
-              onChange={(e) => {
-                setSocial_link_url(e.target.value);
-              }}
-            />
-          </div>
-          <div className="col-md-1">
-            <button onClick={add_social_link}>+</button>
-          </div>
-        </div>
+      <div className="social_links">
+        <div className="social_link"></div>
       </div>
     </div>
   );

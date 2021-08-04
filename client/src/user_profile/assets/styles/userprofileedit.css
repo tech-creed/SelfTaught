@@ -1,13 +1,8 @@
 .user-profile-edit .profile-img img {
-  width: 75%;
-  background-color: yellowgreen;
-  border-radius: 22px;
-  padding: 4px;
-}
-
-.user-profile-edit .profile-img {
-  text-align: center;
-  align-self: center;
+  width: 200px;
+  height: 150px;
+  border-radius: 36px;
+  margin-top: 64px;
 }
 
 .user-profile-edit .profile-img input {
@@ -38,7 +33,6 @@ input {
   justify-content: space-around;
 }
 
-.user-profile-edit .social-links .social-link .social-link-ico {
-  text-align: center;
-  align-self: center;
+.user-profile-edit .social_links .social_link {
+  display: flex;
 }
