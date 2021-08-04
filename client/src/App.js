@@ -21,7 +21,7 @@ function App() {
             <Signin />
           </Route>
 
-          <Route exact path="/username/edit">
+          <Route exact path="/id/edit">
             <UserProfileEdit />
           </Route>
         </Switch>
