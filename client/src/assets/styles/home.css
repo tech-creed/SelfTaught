@@ -1,3 +1,7 @@
+.topnav_images img {
+  width: 100%;
+}
+
 .topnav_images {
   user-select: none;
   z-index: 1;
@@ -13,22 +17,20 @@
 
 .start_btn a {
   font-weight: bold;
-  background-color: #2d3e60;
-  color: #ffffff;
-  padding: 10px;
-  width: 20%;
+  background-color: #f60;
+  color: #2d3e60;
+  padding: 10px 26px;
   text-align: center;
   display: inline-block;
-  box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.5);
+  box-shadow: 0px 0px 20px 1px rgba(0, 0, 0, 0.5);
   font-size: 24px;
   transition: all 0.25s linear;
 }
 
 .start_btn a:hover {
-  transform: scale(1.1);
-  color: #0f1c46;
+  color: #f60;
   box-shadow: 0px 0px 35px 1px rgba(0, 0, 0, 0.75);
-  background-color: #ff002e;
+  background-color: #2d3e60;
 }
 
 .main-content {
@@ -121,8 +123,10 @@
 /* ^|^ Landing First Section Over ^|^ */
 
 .newbi-pro,
-.mcq-test {
-  height: 600px;
+.mcq-test,
+.blog-section {
+  z-index: 2;
+  height: 700px;
 }
 
 .newbi-pro {
@@ -134,7 +138,7 @@
 .newbi-pro a {
   padding: 7px;
   background-color: #a17048;
-  box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.5);
+  box-shadow: 0px 4px 20px 1px rgba(0, 0, 0, 0.5);
   color: #ffffff;
   transition: all 0.25s linear;
   font-weight: bold;
@@ -142,7 +146,7 @@
 .mcq-test a {
   padding: 7px;
   background-color: #a1487f;
-  box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.5);
+  box-shadow: 0px 4px 20px 1px rgba(0, 0, 0, 0.5);
   color: white;
   transition: all 0.25s linear;
   font-weight: bold;
@@ -150,7 +154,7 @@
 .blog-section a {
   padding: 7px;
   background-color: #52a148;
-  box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.5);
+  box-shadow: 0px 4px 20px 1px rgba(0, 0, 0, 0.5);
   color: #ffffff;
   transition: all 0.25s linear;
   font-weight: bold;
@@ -159,22 +163,22 @@
 .newbi-pro a:hover {
   transform: scale(1.15);
   color: #a17048;
-  border-radius: 10px;
-  box-shadow: 0px 0px 35px 1px rgba(0, 0, 0, 0.75);
+  border-radius: 2px;
+
   background-color: white;
 }
 .mcq-test a:hover {
   transform: scale(1.15);
   color: #a1487f;
-  border-radius: 10px;
-  box-shadow: 0px 0px 35px 1px rgba(0, 0, 0, 0.75);
+  border-radius: 2px;
+
   background-color: white;
 }
 .blog-section a:hover {
   transform: scale(1.15);
   color: #52a148;
-  border-radius: 10px;
-  box-shadow: 0px 0px 35px 1px rgba(0, 0, 0, 0.75);
+  border-radius: 2px;
+
   background-color: white;
 }
 

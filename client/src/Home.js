@@ -42,7 +42,9 @@ const LandingPage = () => {
               <br /> ultrices non massa ac diam
             </p>
             <div className="start_btn">
-              <a href="/signin">Start</a>
+              <a href="/signin">
+                Get Started&nbsp;<i class="bi bi-arrow-right"></i>
+              </a>
             </div>
           </div>
         </div>

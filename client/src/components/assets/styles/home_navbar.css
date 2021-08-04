@@ -18,23 +18,20 @@
 
 .authentication_links a {
   display: inline-block;
-  padding: 10px;
+  padding: 4px 16px;
   margin-right: 64px;
   font-size: 22px;
-  width: 30%;
-  background-color: #ff002e;
-  box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.5);
-  color: #0f1c46;
+  background-color: #2d3e60;
+  box-shadow: 0px 4px 8px 1px rgba(0, 0, 0, 0.5);
+  color: #f60;
   font-weight: bold;
   text-align: center;
   transition: all 0.25s linear;
 }
 
 .authentication_links a:hover {
-  transform: scale(1.15);
-  color: #ffffff;
-  box-shadow: 0px 0px 35px 1px rgba(0, 0, 0, 0.75);
-  background-color: #2d3e60;
+  color: #2d3e60;
+  background-color: #f60;
 }
 
 @media (max-width: 768px) {
