@@ -60,7 +60,7 @@ const LandingPage = () => {
                   favourite topics and get certified by us
                 </h5>
                 <p>
-                  <a href="/">Get Started</a>
+                  <a href="/login">Get Started</a>
                 </p>
               </div>
               <img src={New_Pro} alt="new_pro" />
