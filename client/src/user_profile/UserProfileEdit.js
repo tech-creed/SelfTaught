@@ -5,6 +5,7 @@ import { useState } from "react";
 const UserProfileEdit = () => {
   const [linkico, setLinkIco] = useState("link");
   const [social_link_url, setSocial_link_url] = useState("");
+  const [proimg, setProImg] = useState(dummy_usr_img);
 
   /*urls.forEach(url => console.log(url.replace(/.+\/\/|www.|\..+/g, '')))*/
   const add_social_link = () => {
@@ -13,11 +14,15 @@ const UserProfileEdit = () => {
     setLinkIco(web);
   };
 
+  const profileimg_uploaded = (e) => {
+    setProImg(URL.createObjectURL(e.target.files[0]));
+  };
+
   return (
     <div className="container user-profile-edit">
       <div className="row basic-details">
         <div className="col-md-3 profile-img">
-          <img src={dummy_usr_img} alt="user" />
+          <img src={proimg} alt="user" />
         </div>
 
         <div className="col-md-9 names-bio">
@@ -52,6 +57,7 @@ const UserProfileEdit = () => {
                 type="file"
                 name="uploaded_profile_img"
                 id="uploaded_profile_img"
+                onChange={profileimg_uploaded}
                 hidden
               />
               <button type="submit">SAVE</button>
