@@ -25,6 +25,7 @@
   box-shadow: 0px 0px 20px 1px rgba(0, 0, 0, 0.5);
   font-size: 24px;
   transition: all 0.25s linear;
+  border-radius: 2px;
 }
 
 .start_btn a:hover {
@@ -61,6 +62,7 @@
 }
 
 .icon-1 img {
+  user-select: none;
   position: absolute;
   top: 0;
   left: 0%;
@@ -70,6 +72,7 @@
 }
 
 .icon-1-1 img {
+  user-select: none;
   position: absolute;
   top: 0;
   left: -100%;
@@ -79,6 +82,7 @@
 }
 
 .icon-2 img {
+  user-select: none;
   position: absolute;
   top: 0;
   right: 0%;
@@ -88,6 +92,7 @@
 }
 
 .icon-2-2 img {
+  user-select: none;
   position: absolute;
   top: 0;
   right: -100%;
@@ -135,50 +140,43 @@
   align-items: center;
 }
 
-.newbi-pro a {
-  padding: 7px;
-  background-color: #a17048;
+.newbi-pro a,
+.mcq-test a,
+.blog-section a {
+  padding: 4px 8px;
   box-shadow: 0px 4px 20px 1px rgba(0, 0, 0, 0.5);
-  color: #ffffff;
   transition: all 0.25s linear;
+  border-radius: 2px;
   font-weight: bold;
 }
+
+.newbi-pro a {
+  background-color: #a17048;
+  color: #ffffff;
+}
+
 .mcq-test a {
-  padding: 7px;
   background-color: #a1487f;
-  box-shadow: 0px 4px 20px 1px rgba(0, 0, 0, 0.5);
   color: white;
-  transition: all 0.25s linear;
-  font-weight: bold;
 }
 .blog-section a {
-  padding: 7px;
   background-color: #52a148;
-  box-shadow: 0px 4px 20px 1px rgba(0, 0, 0, 0.5);
-  color: #ffffff;
-  transition: all 0.25s linear;
-  font-weight: bold;
+  color: #fff;
 }
 
 .newbi-pro a:hover {
   transform: scale(1.15);
   color: #a17048;
-  border-radius: 2px;
-
   background-color: white;
 }
 .mcq-test a:hover {
   transform: scale(1.15);
   color: #a1487f;
-  border-radius: 2px;
-
   background-color: white;
 }
 .blog-section a:hover {
   transform: scale(1.15);
   color: #52a148;
-  border-radius: 2px;
-
   background-color: white;
 }
 
@@ -198,17 +196,20 @@
 }
 
 .newbi-pro img {
+  user-select: none;
   margin-left: -200px;
   opacity: 0.9;
 }
 
 .mcq-test img {
+  user-select: none;
   left: -10px;
   margin-right: -220px;
   opacity: 0.9;
 }
 
 .blog-section img {
+  user-select: none;
   margin-left: -170px;
   opacity: 0.9;
 }
@@ -267,6 +268,7 @@
 }
 
 .we-are img {
+  user-select: none;
   border-radius: 7px;
   width: 4%;
 }
@@ -348,5 +350,11 @@
   position: absolute;
   z-index: 0;
   width: 100vw;
+  height: 2240px;
   opacity: 0.25;
+}
+
+.landing_content {
+  position: relative;
+  z-index: 2;
 }
