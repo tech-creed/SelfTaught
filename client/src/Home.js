@@ -6,6 +6,8 @@ import New_Pro from "./assets/images/new_pro.png";
 import MCQ from "./assets/images/mcq.png";
 import Blog_Img from "./assets/images/blob_pink.png";
 import Gif_Incompatable from "./assets/images/incompatible.gif";
+import OLOGO from "./assets/images/our_logo.gif";
+import BG_Bubble from "./assets/images/bubble_test.png";
 //import Logo from "./imgages/logo.png";
 
 const LandingPage = () => {
@@ -32,7 +34,7 @@ const LandingPage = () => {
           </div>
 
           <div className="main-content">
-            <h1>Teach Yourself</h1>
+            <h1>TEACH YOURSELF</h1>
             <p id="main-content-para">
               Proin egestas arcu scelerisque ligula dapibus laoree
               <br /> Phasellus non massa ac diam condimentum <br />
@@ -40,12 +42,18 @@ const LandingPage = () => {
               <br /> ultrices non massa ac diam
             </p>
             <div className="start_btn">
-              <a href="/">Start</a>
+              <a href="/signin">
+                Get Started&nbsp;<i class="bi bi-arrow-right"></i>
+              </a>
             </div>
           </div>
         </div>
 
         <div className="landing_content">
+          <div className="bubble_background">
+            <img src={BG_Bubble} alt="test" />
+          </div>
+
           <div className="newbi-pro-background">
             <div className="container newbi-pro">
               <div className="newbi-pro-content">
@@ -54,7 +62,7 @@ const LandingPage = () => {
                   favourite topics and get certified by us
                 </h5>
                 <p>
-                  <a href="/">Get Started</a>
+                  <a href="/login">Get Started</a>
                 </p>
               </div>
               <img src={New_Pro} alt="new_pro" />
@@ -76,7 +84,7 @@ const LandingPage = () => {
             </div>
           </div>
 
-          <div className="blog-section">
+          <div className="blog-section-background">
             <div className="container blog-section">
               <div className="blog-section-content">
                 <h5>What about learning from blogs? We have solution for it</h5>
@@ -84,7 +92,7 @@ const LandingPage = () => {
                   <a href="/">Start Read</a>
                 </p>
               </div>
-              <img src={Blog_Img} alt="gif" />
+              <img src={Blog_Img} alt="blog_img" />
             </div>
           </div>
         </div>
@@ -94,33 +102,19 @@ const LandingPage = () => {
         <img src={Gif_Incompatable} alt="new_pro" />
       </div>
       <footer>
-        <div className="f-icons">
-          <a href="/">
-            <i className="fab fa-github fa-2x"></i>
-          </a>
-          <a href="/">
-            <i className="fab fa-facebook fa-2x"></i>
-          </a>
-          <a href="/">
-            <i className="fab fa-youtube fa-2x"></i>
-          </a>
-          <a href="/">
-            <i className="fab fa-linkedin fa-2x"></i>
-          </a>
-          <a href="/">
-            <i className="fab fa-instagram fa-2x"></i>
-          </a>
-        </div>
         <div className="copyright">
-          <div>&copy;&nbsp;Copyrights TechCreed - 2021</div>
-          <div className="our-link">
-            <a
-              href="https://tech-creed.netlify.com"
-              rel="noreferrer"
-              target="_blank"
-            >
-              Tech Creed
-            </a>
+          <div>Copyright&nbsp;&copy;&nbsp;2021</div>
+          <div className="we-are">
+            <img src={OLOGO} alt="our_logo" />
+            <p>
+              <a
+                href="https://tech-creed.netlify.com"
+                rel="noreferrer"
+                target="_blank"
+              >
+                TECH CREED
+              </a>
+            </p>
           </div>
         </div>
       </footer>

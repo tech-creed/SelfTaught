@@ -9,8 +9,8 @@ const Navbar = () => {
         <img src={logo} alt="logo" />
       </div>
       <div className="authentication_links">
-        <Link to="/resigter">Register</Link>
         <Link to="/login">LogIn</Link>
+        <Link to="/signin">Register</Link>
       </div>
     </div>
   );
