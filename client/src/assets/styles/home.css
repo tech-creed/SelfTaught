@@ -1,34 +1,51 @@
-#top_shade {
+.topnav_images img {
+  width: 100%;
+}
+
+.topnav_images {
+  user-select: none;
+  z-index: 1;
   position: absolute;
   width: 100vw;
-  top: 0;
-  z-index: 1;
-  opacity: 1;
+  overflow: hidden;
 }
 
 #main-content-para {
-  margin: 35px 0px;
-  font-size: 32px;
+  margin: 40px 0px 60px 0px;
+  font-size: 28px;
 }
 
 .start_btn a {
   font-weight: bold;
-  background-color: white;
-  padding: 7px;
-  border-radius: 12px;
+  background-color: #f60;
+  color: #2d3e60;
+  padding: 10px 26px;
+  text-align: center;
+  display: inline-block;
+  box-shadow: 0px 0px 20px 1px rgba(0, 0, 0, 0.5);
+  font-size: 24px;
+  transition: all 0.25s linear;
+  border-radius: 2px;
+}
+
+.start_btn a:hover {
   color: #f60;
-  font-size: 22px;
+  box-shadow: 0px 0px 35px 1px rgba(0, 0, 0, 0.75);
+  background-color: #2d3e60;
 }
 
 .main-content {
   position: absolute;
-  top: 150px;
+  top: 135px;
   left: 120px;
   font-size: 30px;
   z-index: 3;
 }
 
 .main-content h1 {
+  font-family: Cambria;
+  font-weight: bold;
+  color: #0b1534;
   font-size: 58px;
 }
 
@@ -37,12 +54,15 @@
 }
 
 .Icon-Div {
+  user-select: none;
+  overflow: hidden;
   position: absolute;
   height: 100vh;
   width: 100vw;
 }
 
 .icon-1 img {
+  user-select: none;
   position: absolute;
   top: 0;
   left: 0%;
@@ -52,6 +72,7 @@
 }
 
 .icon-1-1 img {
+  user-select: none;
   position: absolute;
   top: 0;
   left: -100%;
@@ -61,6 +82,7 @@
 }
 
 .icon-2 img {
+  user-select: none;
   position: absolute;
   top: 0;
   right: 0%;
@@ -70,6 +92,7 @@
 }
 
 .icon-2-2 img {
+  user-select: none;
   position: absolute;
   top: 0;
   right: -100%;
@@ -105,8 +128,10 @@
 /* ^|^ Landing First Section Over ^|^ */
 
 .newbi-pro,
-.mcq-test {
-  height: 600px;
+.mcq-test,
+.blog-section {
+  z-index: 2;
+  height: 700px;
 }
 
 .newbi-pro {
@@ -118,10 +143,41 @@
 .newbi-pro a,
 .mcq-test a,
 .blog-section a {
-  padding: 7px;
-  border: 1px solid black;
-  border-radius: 12px;
-  color: #f60;
+  padding: 4px 8px;
+  box-shadow: 0px 4px 20px 1px rgba(0, 0, 0, 0.5);
+  transition: all 0.25s linear;
+  border-radius: 2px;
+  font-weight: bold;
+}
+
+.newbi-pro a {
+  background-color: #a17048;
+  color: #ffffff;
+}
+
+.mcq-test a {
+  background-color: #a1487f;
+  color: white;
+}
+.blog-section a {
+  background-color: #52a148;
+  color: #fff;
+}
+
+.newbi-pro a:hover {
+  transform: scale(1.15);
+  color: #a17048;
+  background-color: white;
+}
+.mcq-test a:hover {
+  transform: scale(1.15);
+  color: #a1487f;
+  background-color: white;
+}
+.blog-section a:hover {
+  transform: scale(1.15);
+  color: #52a148;
+  background-color: white;
 }
 
 .newbi-pro p,
@@ -136,22 +192,24 @@
 .mcq-test-content,
 .blog-section-content {
   max-width: 50%;
+  z-index: 1;
 }
 
 .newbi-pro img {
-  z-index: -1;
-  margin-left: -220px;
+  user-select: none;
+  margin-left: -200px;
   opacity: 0.9;
 }
 
 .mcq-test img {
+  user-select: none;
   left: -10px;
   margin-right: -220px;
   opacity: 0.9;
 }
 
 .blog-section img {
-  z-index: -1;
+  user-select: none;
   margin-left: -170px;
   opacity: 0.9;
 }
@@ -186,6 +244,7 @@
 }
 
 .copyright {
+  margin-top: 20px;
   text-align: center;
 }
 
@@ -195,16 +254,60 @@
 
 .mcq-test-background {
   width: 100%;
-  background-color: #fac6c0;
+  background-color: #ffb6e7;
 }
 
-@media (min-width: 768px) {
+.newbi-pro-background {
+  width: 100%;
+  background-color: #ffd9b9;
+}
+
+.blog-section-background {
+  width: 100%;
+  background-color: #c8ffbd;
+}
+
+.we-are img {
+  user-select: none;
+  border-radius: 7px;
+  width: 4%;
+}
+
+.we-are p {
+  margin: 0;
+  margin-left: 20px;
+}
+
+.we-are a {
+  font-weight: bold;
+  color: tomato;
+  text-shadow: 1px 1px 3px black;
+  font-family: Cambria;
+  font-size: 34px;
+}
+
+.we-are a:hover {
+  color: tomato;
+}
+
+.we-are {
+  align-items: center;
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.system-view {
+  overflow: hidden;
+}
+
+@media (min-width: 992px) {
   .mobile-view {
     display: none;
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 992px) {
   .mobile-view {
     height: 50vh;
     text-align: center;
@@ -224,9 +327,34 @@
   #top_shade {
     position: absolute;
     z-index: -1;
-    width: 100;
+    width: 100vw;
     height: 100vh;
     top: 0;
     opacity: 1;
   }
+  .we-are img {
+    border-radius: 7px;
+    width: 12%;
+  }
+  .topnav_images {
+    user-select: none;
+    z-index: 1;
+    position: static;
+    width: 100vw;
+    overflow: hidden;
+  }
+}
+
+.bubble_background img {
+  user-select: none;
+  position: absolute;
+  z-index: 0;
+  width: 100vw;
+  height: 2240px;
+  opacity: 0.25;
+}
+
+.landing_content {
+  position: relative;
+  z-index: 2;
 }
