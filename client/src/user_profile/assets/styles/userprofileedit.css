@@ -1,7 +1,7 @@
 .user-profile-edit .profile-img img {
   width: 200px;
-  height: 150px;
-  border-radius: 36px;
+  height: 266px;
+  border-radius: 12px;
   margin-top: 64px;
 }
 
@@ -33,6 +33,17 @@ input {
   justify-content: space-around;
 }
 
-.user-profile-edit .social_links .social_link {
-  display: flex;
+.user-profile-edit .details {
+  margin-top: 128px;
+}
+
+.user-profile-edit .details h3 {
+  text-align: center;
+  margin-bottom: 36px;
+  font-family: "Cambria";
+}
+
+.user-profile-edit .social_links .social_link .social_icon,
+.add-social-url {
+  text-align: end;
 }
