@@ -1,9 +1,9 @@
 import logo from './logo.svg';
 import './App.css';
-import Signin from "./components/Signin"
+import Signin from "./Components/Signin"
 import { Provider } from 'react-redux'
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
-import Verification from "./components/Verification"
+import Verification from "./Components/Verification"
 import store from './Store';
 function App() {
   return (

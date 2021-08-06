@@ -28,27 +28,25 @@ export default function Signin() {
     const cpassref = useRef(null)
     const textinput = useRef(null);
     const textinput2 = useRef(null);
-    const pass = useRef(null);
-    const pass2 = useRef(null);
     let valid_password_check = new RegExp('(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[^A-Za-z0-9])(?=.{8,})')
     const handleclick=()=>{
-        if (pass.current.type === "password") {
-            pass.current.type = "text"
+        if (textinput.current.type === "password") {
+            textinput.current.type = "text"
             seticon('fa fa-eye')
         }
         else {
-            pass.current.type = "password"
+            textinput.current.type = "password"
             seticon('fa fa-eye-slash')
         }
 
     }
     const handleclick2=()=>{
-        if (pass2.current.type === "password") {
-            pass2.current.type = "text"
+        if (textinput2.current.type === "password") {
+            textinput2.current.type = "text"
             setcicon('fa fa-eye')
         }
         else {
-            pass2.current.type = "password"
+            textinput2.current.type = "password"
             setcicon('fa fa-eye-slash')
         }
 
@@ -67,16 +65,6 @@ export default function Signin() {
 
     }
     const Google = (response) => {
-        console.log(response.profileObj)
-        
-        let userDetails = {
-            "username": response.profileObj.name,
-            "email": response.profileObj.email,
-            "password": response.profileObj.googleId
-        }
-        dispatch({type:'SIGN_IN',payload:userDetails})
-
-       
 
 
     }
@@ -115,16 +103,6 @@ export default function Signin() {
 
     return (
         <Row id="signin-row">
-            <Col sm={12} md={6}>
-                <div class='tilt-container'>
-                    <Tilt>
-                        <img src={signin}/>
-                        <p id='tilt-p'>Join with us to make difference</p>
-                    </Tilt>
-
-                </div>
-                
-            </Col>
            
             <Col sm={12} md={6} id="signin-col-2">
                 <form id="signin-form" onSubmit={(e) => { FormHandler(e) }}>
@@ -133,7 +111,7 @@ export default function Signin() {
                     {ps === 'weak'? <p id ="ps" class='wps' ref={passref}>{ ps }</p>:<p id ="ps" class='sps' ref={passref}>{ ps }</p>}
                     <div class="inputWithIcon">
                        
-                        <input type='password' ref={pass} onChange={(e) => { passwordStrengthHandler(e.target.value) }} placeholder="Password" />
+                        <input type='password' onChange={(e) => { passwordStrengthHandler(e.target.value) }} placeholder="Password" />
                         <i ref={textinput} onClick={handleclick} class={icon}></i>
                         
 
@@ -141,7 +119,7 @@ export default function Signin() {
                     
                    
                     <div class="inputWithIcon">
-                        <input type='password' ref={pass2} onChange={(e) => { setconfirmPassword(e.target.value) }} placeholder="Confirm password" />
+                        <input type='password' onChange={(e) => { setconfirmPassword(e.target.value) }} placeholder="Confirm password" />
                         <i ref={textinput2} onClick={handleclick2} class={cicon}></i>
                         <p id ="cps" ref={cpassref}><strong>{ cps }</strong></p>
 
@@ -159,7 +137,7 @@ export default function Signin() {
                         onSuccess={Google}
                         onFailure={Google}
                         cookiePolicy={'single_host_origin'}
-                        clientId='204444527685-akpo3ibtak32h4oupm0oavn4ceo1tarv.apps.googleusercontent.com'
+                        clientId=""
                     />
 
                     </div>

@@ -40,9 +40,8 @@ code {
  
 }
 .code-p{
-  font-size: 24px;
-  color:rgb(37, 37, 37);
   text-align: center;
+  font-size: larger;
 }
 .code-arrow{
   width: 70px;
@@ -135,13 +134,7 @@ code {
   height:100%;
   
 }
-#tilt-p{
-  margin-top: 25px;
-  font-size: 24px;
-  color:rgb(37, 37, 37);
-  text-align: center;
-}
-.tilt-container{
+#tilt-container{
   display: flex;
   align-items: center;
   justify-content: center;
