@@ -3,6 +3,7 @@ import { useSelector } from 'react-redux'
 import { useRef,useEffect } from 'react'
 import { useHistory } from 'react-router'
 import email from "../images/email.svg"
+import "../assets/styles/Sigin.css"
 export default function Verification() {
     const state = useSelector(state => state.auth)
     let d1 = useRef(null)

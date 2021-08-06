@@ -1,30 +1,39 @@
 const CryptoJS = require("crypto-js");
 const User = require('../models/authModel');
 const mailer = require("nodemailer");
+
 const login = (req,res)=>{
-        
-    user.find({"user_name":req.body.user_name}).toArray().then((doc)=>{
-        if(doc.length === 0){
+   
+    User.find({"username":req.body.user_name},function(err,docs){
+        if(docs.length === 0){
            
             return res.send({"message":"user not found"})
             
         }
         else{
-            doc.forEach((d)=>{
+            let found = false
+            docs.forEach((d)=>{
             
                 var decrypted_password = CryptoJS.AES.decrypt(d.password,"techcreed").toString(CryptoJS.enc.Utf8)
                 if(req.body.password === decrypted_password){
+                    found = true
                     res.send({id:d["_id"]})
                 }
               
             })
+            if(!found){
+                res.send({'message':'wrong password'})
+            
+            }
+           
            
 
         }
-       
+
     })
+   
 }
-const signup =(req,res)=>{
+const signup = (req,res)=>{
     var password = CryptoJS.AES.encrypt(req.body.password,"techcreed")
     var code = Math.floor(100000 + Math.random() * 900000);
    

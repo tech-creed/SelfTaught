@@ -1,14 +1,15 @@
 import React, { useState,useEffect } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
 import { useRef } from 'react'
-import signin from "../images/signin.svg"
-
+import signin from "../assets/images/signin.svg"
+import "../assets/styles/Sigin.css"
 import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
 import GoogleButton from 'react-google-button'
 import GoogleLogin from 'react-google-login'
 import Tilt from 'react-parallax-tilt';
-import { useHistory } from 'react-router'
+import { useHistory } from 'react-router';
+import Navbar from './Home_NavBar'
 
 export default function Signin() {
     
@@ -114,11 +115,13 @@ export default function Signin() {
    
 
     return (
-        <Row id="signin-row">
+        <div>
+        
+            <Row id="signin-row">
             <Col sm={12} md={6}>
                 <div class='tilt-container'>
                     <Tilt>
-                        <img src={signin}/>
+                        <img class='tilt-img' src={signin}/>
                         <p id='tilt-p'>Join with us to make difference</p>
                     </Tilt>
 
@@ -170,5 +173,8 @@ export default function Signin() {
 
 
         </Row>
+
+        </div>
+      
     )
 }

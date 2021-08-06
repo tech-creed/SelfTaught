@@ -1,0 +1,54 @@
+#img{
+    width:600px;
+    height:400px
+  }
+  #margin{
+    margin-top: 50px;
+  }
+  
+  #left-line{
+    margin-right: 0;
+   border-left: 1px solid black;
+  }
+  
+  #signin-form{
+    display:flex;
+    flex-direction: column;
+    width:100%;
+    
+    
+   
+  }
+  #signin-form input{
+     
+    padding-left:10px;
+   
+    margin:0 auto;
+    height:40px;
+    width:80%;
+    margin-bottom: 25px;
+    
+  }
+  #signin-form label{
+     
+    padding-left:7px;
+   
+    margin:0 auto;
+    height:40px;
+    width:80%;
+    
+    
+  }
+  
+  #signin-btn{
+    border:none;
+    border-radius: 20px;
+    background-color:#9ee0d4;
+    font-size: large;
+    margin:0 auto;
+    
+    width:80%;
+    height:40px;
+    
+  
+  }

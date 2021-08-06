@@ -1,13 +1,13 @@
-import "./assets/styles/home.css";
-import Icon1 from "./assets/images/Land_Icon_1.png";
-import Icon2 from "./assets/images/Land_Icon_2.png";
-import Shade from "./assets/images/top_shade.png";
-import New_Pro from "./assets/images/new_pro.png";
-import MCQ from "./assets/images/mcq.png";
-import Blog_Img from "./assets/images/blob_pink.png";
-import Gif_Incompatable from "./assets/images/incompatible.gif";
-import OLOGO from "./assets/images/our_logo.gif";
-import BG_Bubble from "./assets/images/bubble_test.png";
+import "../assets/styles/home.css";
+import Icon1 from "../assets/images/Land_Icon_1.png";
+import Icon2 from "../assets/images/Land_Icon_2.png";
+import Shade from "../assets/images/top_shade.png";
+import New_Pro from "../assets/images/new_pro.png";
+import MCQ from "../assets/images/mcq.png";
+import Blog_Img from "../assets/images/blob_pink.png";
+import Gif_Incompatable from "../assets/images/incompatible.gif";
+import OLOGO from "../assets/images/our_logo.gif";
+import BG_Bubble from "../assets/images/bubble_test.png";
 //import Logo from "./imgages/logo.png";
 
 const LandingPage = () => {
