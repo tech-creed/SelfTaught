@@ -10,7 +10,7 @@ const Navbar = () => {
       </div>
       <div className="authentication_links">
         <Link to="/login">LogIn</Link>
-        <Link to="/signin">Register</Link>
+        <Link to="/signup">Register</Link>
       </div>
     </div>
   );
