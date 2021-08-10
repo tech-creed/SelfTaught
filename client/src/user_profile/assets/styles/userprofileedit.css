@@ -1,3 +1,18 @@
+body {
+  background-color: rgb(248, 246, 239) !important;
+}
+
+.profile-img {
+  text-align: center;
+}
+
+.names-bio {
+  background-color: white;
+  border-radius: 20px;
+  padding: 15px;
+  margin-top: 20px !important;
+}
+
 .user-profile-edit .profile-img img {
   width: 200px;
   height: 266px;
@@ -18,15 +33,34 @@ input {
   resize: none;
 }
 
+.form-btns button {
+  color: black;
+  font-weight: bold;
+  border-width: 0;
+  padding: 7px 42px;
+  border-radius: 6px;
+  background-color: rgb(0, 219, 219);
+  transition: 0.3s;
+}
+
+.form-btns button:hover {
+  color: white;
+  border-radius: 0px;
+  background-color: rgb(2, 241, 241);
+}
+
 .user-profile-edit .names-bio .form-btns .upload-profile-img-label {
   position: relative;
   padding: 8px;
+  cursor: pointer;
   background-color: rgb(202, 90, 46);
-  border-radius: 16px;
+  border-radius: 6px;
+  transition: 0.3s;
 }
 .user-profile-edit .names-bio .form-btns .upload-profile-img-label:hover {
-  color: rgb(202, 90, 46);
-  background-color: aqua;
+  color: white;
+  border-radius: 0px;
+  background-color: rgb(245, 112, 60);
 }
 .user-profile-edit .names-bio .form-btns {
   display: flex;
@@ -34,7 +68,7 @@ input {
 }
 
 .user-profile-edit .details {
-  margin-top: 128px;
+  margin-top: 64px;
 }
 
 .user-profile-edit .details h3 {
@@ -47,3 +81,91 @@ input {
 .add-social-url {
   text-align: end;
 }
+
+.notable_work {
+  margin: 25px 0;
+}
+
+.notable_work input {
+  margin: 5px 0;
+}
+
+.notable_work_save p {
+  margin: 0;
+}
+
+.notable_work_save {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.social_url_inp {
+  margin: 10px 0;
+}
+
+.social_links {
+  justify-content: center;
+}
+
+.add-social-url button {
+  border-radius: 5px;
+}
+
+.my-works {
+  margin-bottom: 72px;
+  justify-content: center;
+}
+
+.work_title {
+  display: flex;
+  justify-content: center;
+}
+
+.work_title button {
+  margin-left: 10px;
+}
+
+.work_descriptiopn textarea {
+  width: 100%;
+}
+
+.my-works div {
+  margin: 5px 0px;
+}
+
+/*Icon Colors*/
+
+.fa-github {
+  color: #211f1f;
+}
+
+.fa-facebook {
+  color: #4267b2;
+}
+
+.fa-instagram {
+  color: #c13584;
+}
+
+.fa-twitter {
+  color: #1da1f2;
+}
+
+.fa-youtube {
+  color: #ff0000;
+}
+
+.fa-hackerrank {
+  color: #00ab6b;
+}
+
+.fa-slack {
+  color: #ecb22e;
+}
+
+.fa-linkedin {
+  color: #0077b5;
+}
+
+/*Icon Colors*/

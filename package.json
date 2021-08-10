@@ -15,6 +15,7 @@
     "crypto-js": "^4.1.1",
     "express": "^4.17.1",
     "mongodb": "^4.0.1",
+    "mongoose": "^5.13.5",
     "nodemailer": "^6.6.3"
   }
 }

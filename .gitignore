@@ -41,6 +41,7 @@ client/build/Release
 client/node_modules/
 client/jspm_packages/
 node_modules/
+node_modules/nodemailer/
 # TypeScript v1 declaration files
 typings/
 

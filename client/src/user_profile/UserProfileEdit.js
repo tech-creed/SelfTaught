@@ -7,6 +7,12 @@ const UserProfileEdit = () => {
   const [social_link_urls, setSocial_link_urls] = useState([]);
   const [newlink, setNewLink] = useState("");
 
+  const [works, setWorks] = useState([]);
+  const [newworktitle, setNewWorkTitle] = useState("");
+  const [newworkdesc, setNewWorkDesc] = useState("");
+  const [newworklink, setNewWorkLink] = useState("");
+  const [isnewcurrent, setIsNewCurrent] = useState(false);
+
   /*urls.forEach(url => console.log(url.replace(/.+\/\/|www.|\..+/g, '')))*/
   const link_2_sitename = (link) => {
     return link.replace(/.+\/\/|www.|\..+/g, "");
@@ -24,7 +30,26 @@ const UserProfileEdit = () => {
     }
   };
 
+  const add_my_work = () => {
+    if (newworktitle && newworkdesc && newworklink) {
+      var user_works = works.concat([
+        {
+          work_title: newworktitle,
+          work_desc: newworkdesc,
+          work_link: newworklink,
+          is_current: isnewcurrent,
+        },
+      ]);
+      setWorks(user_works);
+      setNewWorkLink("");
+      setNewWorkDesc("");
+      setIsNewCurrent(false);
+      setNewWorkTitle("");
+    }
+  };
+
   const removelink = (e) => {
+    console.log(e.target.id);
     var link = document.getElementById("link" + e.target.id).value;
     setSocial_link_urls(
       social_link_urls.filter((url) => {
@@ -39,6 +64,8 @@ const UserProfileEdit = () => {
       <div className="row basic-details">
         <div className="col-md-3 profile-img">
           <img src={proimg} alt="user" />
+          <h6>@username</h6>
+          <p>test@gmail.com</p>
         </div>
 
         <div className="col-md-9 names-bio">
@@ -67,7 +94,7 @@ const UserProfileEdit = () => {
                 htmlFor="uploaded_profile_img"
                 className="upload-profile-img-label"
               >
-                Upload Profile Image
+                <i class="fas fa-upload">&nbsp;Upload Profile Picture</i>
               </label>
               <input
                 type="file"
@@ -103,7 +130,7 @@ const UserProfileEdit = () => {
                 </div>
                 <div className="col-md-1 add-social-url">
                   <button id={id} onClick={removelink}>
-                    -
+                    <i id={id} className={"fa fa-minus"}></i>
                   </button>
                 </div>
               </div>
@@ -125,7 +152,9 @@ const UserProfileEdit = () => {
                 />
               </div>
               <div className="col-md-1 add-social-url">
-                <button onClick={add_social_link}>+</button>
+                <button onClick={add_social_link}>
+                  <i className={"fa fa-plus"}></i>
+                </button>
               </div>
             </div>
           )}
@@ -134,21 +163,70 @@ const UserProfileEdit = () => {
         <div className="notable-works col-md-6">
           <h3>NOTABLE WORKS</h3>
 
-          <div className="notable_work1">
+          <div className="notable_work">
             <input type="text" placeholder="Title" />
             <input type="text" placeholder="Link" />
           </div>
 
-          <div className="notable_work2">
+          <div className="notable_work">
             <input type="text" placeholder="Title" />
             <input type="text" placeholder="Link" />
           </div>
 
-          <div className="notable_work3">
+          <div className="notable_work">
             <input type="text" placeholder="Title" />
             <input type="text" placeholder="Link" />
           </div>
-          <button>save</button>
+          <div className="notable_work_save">
+            <p>Saved!</p>
+            <button>save</button>
+          </div>
+        </div>
+
+        <div className="row my-works">
+          <h3>MY WORKS</h3>
+          <div className="work_title col-md-8">
+            <input type="text" placeholder="Your Works" />
+            <button type="submit">
+              <i className="bi bi-trash"></i>
+            </button>
+          </div>
+          <div className="work_descriptiopn col-md-8">
+            <textarea placeholder="Description"></textarea>
+          </div>
+          <div className="work_descriptiopn col-md-8">
+            <input type="text" placeholder="Works URL" />
+          </div>
+        </div>
+
+        <div className="row my-works">
+          <div className="work_title col-md-8">
+            <input type="text" placeholder="Your Works" />
+            <button type="submit">
+              <i className="bi bi-trash"></i>
+            </button>
+          </div>
+          <div className="work_descriptiopn col-md-8">
+            <textarea placeholder="Description"></textarea>
+          </div>
+          <div className="work_descriptiopn col-md-8">
+            <input type="text" placeholder="Works URL" />
+          </div>
+        </div>
+
+        <div className="row my-works">
+          <div className="work_title col-md-8">
+            <input type="text" placeholder="Your Works" />
+            <button type="submit">
+              <i className="bi bi-trash"></i>
+            </button>
+          </div>
+          <div className="work_descriptiopn col-md-8">
+            <textarea placeholder="Description"></textarea>
+          </div>
+          <div className="work_descriptiopn col-md-8">
+            <input type="text" placeholder="Works URL" />
+          </div>
         </div>
       </div>
     </div>
