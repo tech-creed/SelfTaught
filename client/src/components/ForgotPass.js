@@ -27,7 +27,7 @@ const Reeset = () => {
     })
       .then((res) => {
         if (!res.ok) {
-          throw Error("Could not Server");
+          throw Error("Could not Connect to Server");
         }
         return res.json();
       })

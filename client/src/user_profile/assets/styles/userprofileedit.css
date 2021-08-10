@@ -1,5 +1,5 @@
 body {
-  background-color: rgb(248, 246, 239) !important;
+  background-color: rgb(239, 248, 239) !important;
 }
 
 .profile-img {
@@ -77,6 +77,11 @@ input {
   font-family: "Cambria";
 }
 
+.social_links{
+  border-right: 1px solid black;
+  border-right-color: rgba(0,0,0,0.2);
+}
+
 .user-profile-edit .social_links .social_link .social_icon,
 .add-social-url {
   text-align: end;
@@ -90,13 +95,30 @@ input {
   margin: 5px 0;
 }
 
+.notable_work_save button{
+  padding: 5px 23px;
+  background-color: rgb(209, 141, 14);
+  border-radius: 3px;
+  border-width: 0;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.notable_work_save button:hover{
+  border-radius: 0px;
+  background-color: rgb(255, 166, 0);
+  color: white;
+
+}
+
 .notable_work_save p {
   margin: 0;
 }
 
 .notable_work_save {
-  display: flex;
-  justify-content: space-evenly;
+  padding-top: 10px;
+  padding-bottom: 20px;
+  text-align: center;
   align-items: center;
 }
 
@@ -112,8 +134,12 @@ input {
   border-radius: 5px;
 }
 
+.notable-works{
+  margin-bottom: 32px;
+}
+
 .my-works {
-  margin-bottom: 72px;
+  margin-bottom: 82px;
   justify-content: center;
 }
 
@@ -131,7 +157,7 @@ input {
 }
 
 .my-works div {
-  margin: 5px 0px;
+  margin: 10px 0px;
 }
 
 /*Icon Colors*/

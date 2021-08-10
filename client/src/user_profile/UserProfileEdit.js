@@ -64,8 +64,6 @@ const UserProfileEdit = () => {
       <div className="row basic-details">
         <div className="col-md-3 profile-img">
           <img src={proimg} alt="user" />
-          <h6>@username</h6>
-          <p>test@gmail.com</p>
         </div>
 
         <div className="col-md-9 names-bio">
@@ -108,7 +106,7 @@ const UserProfileEdit = () => {
           </form>
         </div>
       </div>
-
+      <hr></hr>
       <div className="details row">
         <div className="social_links col-md-6">
           <h3>SOCIAL LINKS</h3>
@@ -159,7 +157,7 @@ const UserProfileEdit = () => {
             </div>
           )}
         </div>
-
+        
         <div className="notable-works col-md-6">
           <h3>NOTABLE WORKS</h3>
 
@@ -177,54 +175,54 @@ const UserProfileEdit = () => {
             <input type="text" placeholder="Title" />
             <input type="text" placeholder="Link" />
           </div>
-          <div className="notable_work_save">
+        </div>
+        <div className="notable_work_save">
             <p>Saved!</p>
             <button>save</button>
           </div>
-        </div>
-
+        <hr></hr>
         <div className="row my-works">
           <h3>MY WORKS</h3>
-          <div className="work_title col-md-8">
+          <div className="work_title col-md-10">
             <input type="text" placeholder="Your Works" />
             <button type="submit">
               <i className="bi bi-trash"></i>
             </button>
           </div>
-          <div className="work_descriptiopn col-md-8">
+          <div className="work_descriptiopn col-md-10">
             <textarea placeholder="Description"></textarea>
           </div>
-          <div className="work_descriptiopn col-md-8">
+          <div className="work_descriptiopn col-md-10">
             <input type="text" placeholder="Works URL" />
           </div>
         </div>
 
         <div className="row my-works">
-          <div className="work_title col-md-8">
+          <div className="work_title col-md-10">
             <input type="text" placeholder="Your Works" />
             <button type="submit">
               <i className="bi bi-trash"></i>
             </button>
           </div>
-          <div className="work_descriptiopn col-md-8">
+          <div className="work_descriptiopn col-md-10">
             <textarea placeholder="Description"></textarea>
           </div>
-          <div className="work_descriptiopn col-md-8">
+          <div className="work_descriptiopn col-md-10">
             <input type="text" placeholder="Works URL" />
           </div>
         </div>
 
         <div className="row my-works">
-          <div className="work_title col-md-8">
+          <div className="work_title col-md-10">
             <input type="text" placeholder="Your Works" />
             <button type="submit">
               <i className="bi bi-trash"></i>
             </button>
           </div>
-          <div className="work_descriptiopn col-md-8">
+          <div className="work_descriptiopn col-md-10">
             <textarea placeholder="Description"></textarea>
           </div>
-          <div className="work_descriptiopn col-md-8">
+          <div className="work_descriptiopn col-md-10">
             <input type="text" placeholder="Works URL" />
           </div>
         </div>
