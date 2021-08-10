@@ -10,12 +10,16 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "bcryptjs": "^2.4.3",
     "bootstrap-icons": "^1.5.0",
     "cors": "^2.8.5",
     "crypto-js": "^4.1.1",
     "express": "^4.17.1",
+    "js-cookie": "^3.0.0",
+    "jsonwebtoken": "^8.5.1",
     "mongodb": "^4.0.1",
     "mongoose": "^5.13.5",
-    "nodemailer": "^6.6.3"
+    "nodemailer": "^6.6.3",
+    "nodemon": "^2.0.12"
   }
 }

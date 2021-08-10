@@ -349,9 +349,8 @@
   user-select: none;
   position: absolute;
   z-index: 0;
-  width: 100vw;
-  height: 2240px;
-  opacity: 0.25;
+  width: 180vw;
+  opacity: 0.2;
 }
 
 .landing_content {
