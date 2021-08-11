@@ -3,8 +3,10 @@
 
 body {
   overflow-x: hidden;
+  background-color: white!important;
   scroll-behavior: smooth;
 }
+
 
 ::-webkit-scrollbar {
   width: 5px;

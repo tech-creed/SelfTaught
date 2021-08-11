@@ -1,5 +1,6 @@
 import dummy_usr_img from "./assets/images/dummy_user.png";
 import design_1 from "./assets/images/design30.png";
+import design_2 from "./assets/images/design18.png";
 import "./assets/styles/userprofileedit.css";
 import { useState } from "react";
 
@@ -61,8 +62,9 @@ const UserProfileEdit = () => {
   };
 
   return (
+    <div className="profile-edit-main">
+    <img id='background-design1' src={design_1} alt="" />
     <div className="container user-profile-edit">
-      <img id='background-design' src={design_1} alt="" />
       <h1 id='p_edit_heading'>USER PROFILE EDIT</h1>
       <div className="row basic-details">
         <div className="col-md-3 profile-img">  
@@ -74,11 +76,11 @@ const UserProfileEdit = () => {
             <div className="details">
               <div className='row'>
               <div className="inp-field col-md-6">
-                <div className='lable'>FULL NAME</div>
+                <div className='lable'>FUll Name</div>
                 <input type="text" />
               </div>
               <div className="inp-field col-md-6">
-                <div className='lable'>USERNAME</div>
+                <div className='lable'>Username</div>
                 <input type="text" />
               </div>
               </div>
@@ -87,7 +89,7 @@ const UserProfileEdit = () => {
                 <input type="text" placeholder="seperate with , " />
               </div>
               <div className="inp-field">
-                <div className='lable'>BIO</div>
+                <div className='lable'>Bio</div>
                 <textarea rows="6" type="text"></textarea>
               </div>
             </div>
@@ -97,7 +99,8 @@ const UserProfileEdit = () => {
                 htmlFor="uploaded_profile_img"
                 className="upload-profile-img-label"
               >
-                <i class="fas fa-upload">&nbsp;Upload Profile Picture</i>
+                <i class="fas fa-upload"></i>
+                &nbsp;Upload Profile Picture
               </label>
               <input
                 type="file"
@@ -106,6 +109,7 @@ const UserProfileEdit = () => {
                 onChange={profileimg_uploaded}
                 hidden
               />
+              <p>Saved</p>
               <button type="submit">SAVE</button>
             </div>
           </form>
@@ -166,73 +170,136 @@ const UserProfileEdit = () => {
         <div className="notable-works col-md-6">
           <h3>NOTABLE WORKS</h3>
 
-          <div className="notable_work">
-            <input type="text" placeholder="Title" />
-            <input type="text" placeholder="Link" />
+          <div className="row notable_work">
+            <div className='col-md-6'>
+              <div className='lable'>Title</div>
+              <input type="text"/>
+            </div>
+            <div className='col-md-6'>
+              <div className='lable'>Link</div>
+              <input type="text"/>
+            </div>
           </div>
 
-          <div className="notable_work">
-            <input type="text" placeholder="Title" />
-            <input type="text" placeholder="Link" />
+          <div className="row notable_work">
+            <div className='col-md-6'>
+              <div className='lable'>Title</div>
+              <input type="text"/>
+            </div>
+            <div className='col-md-6'>
+              <div className='lable'>Link</div>
+              <input type="text"/>
+            </div>
           </div>
 
-          <div className="notable_work">
-            <input type="text" placeholder="Title" />
-            <input type="text" placeholder="Link" />
+          <div className="row notable_work">
+            <div className='col-md-6'>
+              <div className='lable'>Title</div>
+              <input type="text"/>
+            </div>
+            <div className='col-md-6'>
+              <div className='lable'>Link</div>
+              <input type="text"/>
+            </div>
           </div>
+
         </div>
         <div className="notable_work_save">
             <p>Saved!</p>
-            <button>save</button>
-          </div>
+            <button>SAVE</button>
+        </div>
         <hr></hr>
+        <img id='background-design2' src={design_2} alt="" />
         <h3>MY WORKS</h3>
         <div className="row my-works">
-          <div className="work_title col-md-10">
-            <input type="text" placeholder="Your Works" />
-            <button type="submit">
-              <i className="bi bi-trash"></i>
-            </button>
+          
+          <div className='row my_works_url_title'>
+            <div className="work_title col-md-5">
+              <div className='lable'>Your Work</div>
+              <input type="text"/>
+            </div>
+            <div className="work_descriptiopn col-md-5">
+              <div className='lable'>Work URL</div>
+              <input type="text"/>
+            </div>
+            <div className='col-md-2'>
+              <div className='lable'>&nbsp;</div>
+              <button type="submit">
+                <i className="bi bi-trash"></i>
+              </button>
+            </div>
           </div>
-          <div className="work_descriptiopn col-md-10">
-            <textarea placeholder="Description"></textarea>
-          </div>
-          <div className="work_descriptiopn col-md-10">
-            <input type="text" placeholder="Works URL" />
+
+          <div className='col-md-12'>
+            <div className='lable'>Work Description</div>
+            <div className="work_descriptiopn">
+              <textarea></textarea>
+            </div>
           </div>
         </div>
 
         <div className="row my-works">
-          <div className="work_title col-md-10">
-            <input type="text" placeholder="Your Works" />
-            <button type="submit">
-              <i className="bi bi-trash"></i>
-            </button>
+
+          <div className='row my_works_url_title'>
+            <div className="work_title col-md-5">
+              <div className='lable'>Your Work</div>
+              <input type="text"/>
+            </div>
+            <div className="work_descriptiopn col-md-5">
+              <div className='lable'>Work URL</div>
+              <input type="text"/>
+            </div>
+            <div className='col-md-2'>
+              <div className='lable'>&nbsp;</div>
+              <button type="submit">
+                <i className="bi bi-trash"></i>
+              </button>
+            </div>
           </div>
-          <div className="work_descriptiopn col-md-10">
-            <textarea placeholder="Description"></textarea>
-          </div>
-          <div className="work_descriptiopn col-md-10">
-            <input type="text" placeholder="Works URL" />
+
+          <div className='col-md-12'>
+            <div className='lable'>Work Description</div>
+            <div className="work_descriptiopn">
+              <textarea></textarea>
+            </div>
           </div>
         </div>
 
         <div className="row my-works">
-          <div className="work_title col-md-10">
-            <input type="text" placeholder="Your Works" />
-            <button type="submit">
-              <i className="bi bi-trash"></i>
-            </button>
+          
+          <div className='row my_works_url_title'>
+            <div className="work_title col-md-5">
+              <div className='lable'>Your Work</div>
+              <input type="text"/>
+            </div>
+            <div className="work_descriptiopn col-md-5">
+              <div className='lable'>Work URL</div>
+              <input type="text"/>
+            </div>
+            <div className='col-md-2'>
+              <div className='lable'>&nbsp;</div>
+              <button type="submit">
+                <i className="bi bi-trash"></i>
+              </button>
+            </div>
           </div>
-          <div className="work_descriptiopn col-md-10">
-            <textarea placeholder="Description"></textarea>
+
+          <div className='col-md-12'>
+            <div className='lable'>Work Description</div>
+            <div className="work_descriptiopn">
+              <textarea></textarea>
+            </div>
+            <div className="notable_work_save">
+              <p>Saved!</p>
+              <button>SAVE</button>
           </div>
-          <div className="work_descriptiopn col-md-10">
-            <input type="text" placeholder="Works URL" />
           </div>
         </div>
+
+
       </div>
     </div>
+  </div>
   );
 };
 

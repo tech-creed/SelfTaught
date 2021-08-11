@@ -1,18 +1,29 @@
-body {
+
+.profile-edit-main{
+  z-index: 0;
+  position: relative;
   background-color: #2d3e60 !important;
 }
 
+hr{
+  color: #f60!important;
+  opacity: 0.5!important;
+}
+
 .user-profile-edit input,.user-profile-edit textarea{
+  z-index: 1;
   outline: none;
   border-width: 0;
   background-color: rgb(255, 241, 232);
   box-shadow: 0px 0px 6px 1px rgba(44, 44, 44, 0.26);
   border-radius: 2px;
-  transition: 0.5s linear;
-  border-bottom: 2px solid transparent;
+  transition: 0.3s linear;
+  border: 3px solid transparent;
 }
 
 .user-profile-edit h3{
+  font-size: 30px;
+  margin-top: 42px;
   color: #f60;
   font-weight: bold;
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif!important;
@@ -23,7 +34,7 @@ body {
   height: 70px;
 }
 
-#background-design{
+#background-design1{
   position: absolute;
   right: -20px;
   top: -130px;
@@ -32,20 +43,30 @@ body {
   opacity: 0.8;
 }
 
+#background-design2{
+  position: absolute;
+  width: 50%;
+  left: -80px;
+  top: 580px;
+  z-index: -1;
+  opacity: 0.5;
+}
+
 .lable{
+  font-size: 19px;
   color: white;
 }
 
 #p_edit_heading{
+  padding-top: 22px;
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   color: #f60;
-  margin-top: 24px;
   text-align: center;
   font-weight: bold;
 }
 
 input:focus,textarea:focus{
-  border-bottom: 2px solid rgb(224, 78, 20);
+  border: 3px solid rgb(224, 78, 20);
 }
 
 textarea:focus{
@@ -82,41 +103,49 @@ input {
   resize: none;
 }
 
+.form-btns{
+  align-items: center;
+}
+
+.form-btns p{
+  margin: 0;
+  color: rgb(0,255,0);
+}
+
 .form-btns button {
-  color: black;
+  color: white;
   font-weight: bold;
   border-width: 0;
   padding: 7px 42px;
   border-radius: 6px;
-  background-color: rgb(0, 219, 219);
+  background-color: #5eac1e;
   transition: 0.3s;
 }
 
 .form-btns button:hover {
-  color: white;
+  color: rgb(75, 75, 75);
   border-radius: 0px;
-  background-color: rgb(2, 241, 241);
+  background-color: #71e215;
 }
 
 .user-profile-edit .names-bio .form-btns .upload-profile-img-label {
   position: relative;
   padding: 8px;
+  color: white;
   cursor: pointer;
-  background-color: rgb(202, 90, 46);
+  background-color: #ac1ea5;
   border-radius: 6px;
   transition: 0.3s;
 }
 .user-profile-edit .names-bio .form-btns .upload-profile-img-label:hover {
-  color: white;
+  color: black;
   border-radius: 0px;
-  background-color: rgb(245, 112, 60);
+  background-color: #e40fd9;
 }
 .user-profile-edit .names-bio .form-btns {
   display: flex;
   justify-content: space-around;
 }
-
-
 
 .user-profile-edit .details h3 {
   text-align: center;
@@ -126,7 +155,7 @@ input {
 
 .social_links{
   border-right: 1px solid black;
-  border-right-color: rgba(0,0,0,0.2);
+  border-right-color: rgba(255, 102, 0,0.5);
 }
 
 .basic-details{
@@ -147,9 +176,10 @@ input {
 }
 
 .notable_work_save button{
-  margin-left: 25px;
-  padding: 5px 23px;
-  background-color: rgb(209, 141, 14);
+  margin-left: 20px;
+  padding: 8px 38px;
+  background-color: #5eac1e;
+  color: white;
   border-radius: 3px;
   border-width: 0;
   font-weight: bold;
@@ -158,8 +188,8 @@ input {
 
 .notable_work_save button:hover{
   border-radius: 0px;
-  background-color: rgb(255, 166, 0);
-  color: white;
+  background-color: #71e215;
+  color: black;
 
 }
 
@@ -200,17 +230,25 @@ input {
   margin-bottom: 32px;
 }
 
-.my-works {
-  padding: 18px;
-  border: 1px solid rgba(0,0,0,0.2);
-  margin-bottom: 46px;
-  justify-content: center;
+.notable_work_save p{
+  color: rgb(0, 255, 0);
 }
 
-.work_title {
-  display: flex;
-  justify-content: center;
+.my-works {
+  border: 1px solid rgb(255, 102, 0,0.65);
+  margin-bottom: 46px;
+  padding: 16px 64px!important;
 }
+
+.work-btn{
+  text-align: center;
+}
+
+.my_works_url_title{
+  padding: 0!important;
+  
+}
+
 
 .work_title button {
   margin-left: 10px;
@@ -223,6 +261,23 @@ input {
 .my-works div {
   margin: 10px 0px;
 }
+
+.my_works_url_title{
+  align-items: center;
+}
+
+.my_works_url_title button{
+  border-width: 0;
+  padding: 3px 6px;
+  transition: 0.2s;
+  border-radius: 2px;
+}
+
+.my_works_url_title button:hover{
+  transform: scale(1.15);
+  box-shadow: 0px 0px 3px 0px black;
+}
+
 
 /*Icon Colors*/
 
@@ -263,6 +318,10 @@ input {
 }
 
 .fa-minus{
+  color: red;
+}
+
+.bi-trash{
   color: red;
 }
 

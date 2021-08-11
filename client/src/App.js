@@ -8,6 +8,7 @@ import Forgot from "./components/ForgotPass";
 import ChangePassword from "./components/ChangePass";
 import HNavbar from "./components/Home_NavBar.js";
 import "./assets/styles/app.css";
+import "./assets/styles/index.css";
 import UserProfileEdit from "./user_profile/UserProfileEdit";
 import Login from "./components/Login";
 function App() {
