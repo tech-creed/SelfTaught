@@ -1,4 +1,5 @@
 import dummy_usr_img from "./assets/images/dummy_user.png";
+import design_1 from "./assets/images/design30.png";
 import "./assets/styles/userprofileedit.css";
 import { useState } from "react";
 
@@ -61,28 +62,32 @@ const UserProfileEdit = () => {
 
   return (
     <div className="container user-profile-edit">
+      <img id='background-design' src={design_1} alt="" />
+      <h1 id='p_edit_heading'>USER PROFILE EDIT</h1>
       <div className="row basic-details">
-        <div className="col-md-3 profile-img">
+        <div className="col-md-3 profile-img">  
           <img src={proimg} alt="user" />
         </div>
 
         <div className="col-md-9 names-bio">
           <form action="" method="post">
             <div className="details">
-              <div className="inp-field">
-                <div>FULL NAME</div>
+              <div className='row'>
+              <div className="inp-field col-md-6">
+                <div className='lable'>FULL NAME</div>
                 <input type="text" />
               </div>
-              <div className="inp-field">
-                <div>USERNAME</div>
+              <div className="inp-field col-md-6">
+                <div className='lable'>USERNAME</div>
                 <input type="text" />
               </div>
+              </div>
               <div className="inp-field">
-                <div>Your Role</div>
+                <div className='lable'>Your Role</div>
                 <input type="text" placeholder="seperate with , " />
               </div>
               <div className="inp-field">
-                <div>BIO</div>
+                <div className='lable'>BIO</div>
                 <textarea rows="6" type="text"></textarea>
               </div>
             </div>
@@ -181,8 +186,8 @@ const UserProfileEdit = () => {
             <button>save</button>
           </div>
         <hr></hr>
+        <h3>MY WORKS</h3>
         <div className="row my-works">
-          <h3>MY WORKS</h3>
           <div className="work_title col-md-10">
             <input type="text" placeholder="Your Works" />
             <button type="submit">

@@ -1,5 +1,55 @@
 body {
-  background-color: rgb(239, 248, 239) !important;
+  background-color: #2d3e60 !important;
+}
+
+.user-profile-edit input,.user-profile-edit textarea{
+  outline: none;
+  border-width: 0;
+  background-color: rgb(255, 241, 232);
+  box-shadow: 0px 0px 6px 1px rgba(44, 44, 44, 0.26);
+  border-radius: 2px;
+  transition: 0.5s linear;
+  border-bottom: 2px solid transparent;
+}
+
+.user-profile-edit h3{
+  color: #f60;
+  font-weight: bold;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif!important;
+}
+
+.user-profile-edit textarea{
+  resize: none;
+  height: 70px;
+}
+
+#background-design{
+  position: absolute;
+  right: -20px;
+  top: -130px;
+  width: 800px;
+  z-index: -1;
+  opacity: 0.8;
+}
+
+.lable{
+  color: white;
+}
+
+#p_edit_heading{
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  color: #f60;
+  margin-top: 24px;
+  text-align: center;
+  font-weight: bold;
+}
+
+input:focus,textarea:focus{
+  border-bottom: 2px solid rgb(224, 78, 20);
+}
+
+textarea:focus{
+  height:120px;
 }
 
 .profile-img {
@@ -7,7 +57,6 @@ body {
 }
 
 .names-bio {
-  background-color: white;
   border-radius: 20px;
   padding: 15px;
   margin-top: 20px !important;
@@ -67,9 +116,7 @@ input {
   justify-content: space-around;
 }
 
-.user-profile-edit .details {
-  margin-top: 64px;
-}
+
 
 .user-profile-edit .details h3 {
   text-align: center;
@@ -80,6 +127,10 @@ input {
 .social_links{
   border-right: 1px solid black;
   border-right-color: rgba(0,0,0,0.2);
+}
+
+.basic-details{
+  margin: 10px 0px!important;
 }
 
 .user-profile-edit .social_links .social_link .social_icon,
@@ -96,6 +147,7 @@ input {
 }
 
 .notable_work_save button{
+  margin-left: 25px;
   padding: 5px 23px;
   background-color: rgb(209, 141, 14);
   border-radius: 3px;
@@ -112,10 +164,13 @@ input {
 }
 
 .notable_work_save p {
+  margin-right: 25px;
   margin: 0;
 }
 
 .notable_work_save {
+  display: flex;
+  justify-content: center;
   padding-top: 10px;
   padding-bottom: 20px;
   text-align: center;
@@ -132,6 +187,13 @@ input {
 
 .add-social-url button {
   border-radius: 5px;
+  border-width: 0;
+  transition: 0.1s linear;
+}
+
+.add-social-url button:hover{
+  transform: scale(1.2);
+  box-shadow: 0px 0px 2px 0px black;
 }
 
 .notable-works{
@@ -139,7 +201,9 @@ input {
 }
 
 .my-works {
-  margin-bottom: 82px;
+  padding: 18px;
+  border: 1px solid rgba(0,0,0,0.2);
+  margin-bottom: 46px;
   justify-content: center;
 }
 
@@ -192,6 +256,14 @@ input {
 
 .fa-linkedin {
   color: #0077b5;
+}
+
+.fa-plus{
+  color: green;
+}
+
+.fa-minus{
+  color: red;
 }
 
 /*Icon Colors*/
