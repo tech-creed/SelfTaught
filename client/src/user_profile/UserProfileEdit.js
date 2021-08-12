@@ -109,7 +109,7 @@ const UserProfileEdit = () => {
                 onChange={profileimg_uploaded}
                 hidden
               />
-              <p>Saved</p>
+              <p>Update to Save</p>
               <button type="submit">SAVE</button>
             </div>
           </form>
@@ -214,41 +214,20 @@ const UserProfileEdit = () => {
         <div className="row my-works">
           
           <div className='row my_works_url_title'>
-            <div className="work_title col-md-5">
+            <div className="work_title col-md-4">
               <div className='lable'>Your Work</div>
               <input type="text"/>
             </div>
-            <div className="work_descriptiopn col-md-5">
+            <div className="work_descriptiopn col-md-4">
               <div className='lable'>Work URL</div>
               <input type="text"/>
             </div>
-            <div className='col-md-2'>
-              <div className='lable'>&nbsp;</div>
-              <button type="submit">
-                <i className="bi bi-trash"></i>
-              </button>
+            <div class="switch-toggle col-md-2">
+                <div className='lable'>Working</div>
+                <input type="checkbox" id="currently_working_1" />
+                <label htmlFor="currently_working_1"></label>
             </div>
-          </div>
-
-          <div className='col-md-12'>
-            <div className='lable'>Work Description</div>
-            <div className="work_descriptiopn">
-              <textarea></textarea>
-            </div>
-          </div>
-        </div>
-
-        <div className="row my-works">
-
-          <div className='row my_works_url_title'>
-            <div className="work_title col-md-5">
-              <div className='lable'>Your Work</div>
-              <input type="text"/>
-            </div>
-            <div className="work_descriptiopn col-md-5">
-              <div className='lable'>Work URL</div>
-              <input type="text"/>
-            </div>
+           
             <div className='col-md-2'>
               <div className='lable'>&nbsp;</div>
               <button type="submit">
@@ -268,14 +247,20 @@ const UserProfileEdit = () => {
         <div className="row my-works">
           
           <div className='row my_works_url_title'>
-            <div className="work_title col-md-5">
+            <div className="work_title col-md-4">
               <div className='lable'>Your Work</div>
               <input type="text"/>
             </div>
-            <div className="work_descriptiopn col-md-5">
+            <div className="work_descriptiopn col-md-4">
               <div className='lable'>Work URL</div>
               <input type="text"/>
             </div>
+            <div class="switch-toggle col-md-2">
+                <div className='lable'>Working</div>
+                <input type="checkbox" id="currently_working_2" />
+                <label htmlFor="currently_working_2"></label>
+            </div>
+           
             <div className='col-md-2'>
               <div className='lable'>&nbsp;</div>
               <button type="submit">
@@ -289,10 +274,39 @@ const UserProfileEdit = () => {
             <div className="work_descriptiopn">
               <textarea></textarea>
             </div>
-            <div className="notable_work_save">
-              <p>Saved!</p>
-              <button>SAVE</button>
           </div>
+        </div>
+
+        <div className="row my-works">
+          
+          <div className='row my_works_url_title'>
+            <div className="work_title col-md-4">
+              <div className='lable'>Your Work</div>
+              <input type="text"/>
+            </div>
+            <div className="work_descriptiopn col-md-4">
+              <div className='lable'>Work URL</div>
+              <input type="text"/>
+            </div>
+            <div class="switch-toggle col-md-2">
+                <div className='lable'>Working</div>
+                <input type="checkbox" id="currently_working_3" />
+                <label htmlFor="currently_working_3"></label>
+            </div>
+           
+            <div className='col-md-2'>
+              <div className='lable'>&nbsp;</div>
+              <button type="submit">
+                <i className="bi bi-trash"></i>
+              </button>
+            </div>
+          </div>
+
+          <div className='col-md-12'>
+            <div className='lable'>Work Description</div>
+            <div className="work_descriptiopn">
+              <textarea></textarea>
+            </div>
           </div>
         </div>
 
