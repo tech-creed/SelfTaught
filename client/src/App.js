@@ -22,13 +22,16 @@ function App() {
           </Route>
 
           <Route exact path="/signup">
+            <HNavbar />
             <Signin />
           </Route>
           <Route exact path="/login">
+            <HNavbar />
             <Login />
           </Route>
 
           <Route exact path="/forgot_pass">
+            <HNavbar />
             <Forgot />
           </Route>
 

@@ -1,12 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;1,100;1,300&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=Adamina&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Adamina&display=swap");
 
 body {
   overflow-x: hidden;
-  background-color: white!important;
+  background-color: white !important;
   scroll-behavior: smooth;
 }
-
 
 ::-webkit-scrollbar {
   width: 5px;

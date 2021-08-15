@@ -1,15 +1,16 @@
-.profile-edit-main{
+.profile-edit-main {
   z-index: 0;
   position: relative;
   background-color: #2d3e60 !important;
 }
 
-hr{
-  color: #f60!important;
-  opacity: 0.5!important;
+hr {
+  color: #f60 !important;
+  opacity: 0.5 !important;
 }
 
-.user-profile-edit input,.user-profile-edit textarea{
+.user-profile-edit input,
+.user-profile-edit textarea {
   z-index: 1;
   outline: none;
   border-width: 0;
@@ -20,20 +21,20 @@ hr{
   border: 3px solid transparent;
 }
 
-.user-profile-edit h3{
+.user-profile-edit h3 {
   font-size: 30px;
   margin-top: 42px;
   color: #f60;
   font-weight: bold;
-  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif!important;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif !important;
 }
 
-.user-profile-edit textarea{
+.user-profile-edit textarea {
   resize: none;
   height: 70px;
 }
 
-#background-design1{
+#background-design1 {
   position: absolute;
   right: -20px;
   top: -130px;
@@ -42,7 +43,7 @@ hr{
   opacity: 0.8;
 }
 
-#background-design2{
+#background-design2 {
   position: absolute;
   width: 50%;
   left: -80px;
@@ -51,26 +52,27 @@ hr{
   opacity: 0.5;
 }
 
-.lable{
+.lable {
   text-transform: uppercase;
   font-size: 19px;
   color: white;
 }
 
-#p_edit_heading{
+#p_edit_heading {
   padding-top: 22px;
-  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
   color: #f60;
   text-align: center;
   font-weight: bold;
 }
 
-input:focus,textarea:focus{
+input:focus,
+textarea:focus {
   border: 3px solid rgb(224, 78, 20);
 }
 
-textarea:focus{
-  height:120px;
+textarea:focus {
+  height: 120px;
 }
 
 .profile-img {
@@ -103,13 +105,13 @@ input {
   resize: none;
 }
 
-.form-btns{
+.form-btns {
   align-items: center;
 }
 
-.form-btns p{
+.form-btns p {
   margin: 0;
-  color: rgb(0,255,0);
+  color: rgb(0, 255, 0);
 }
 
 .form-btns button {
@@ -153,13 +155,13 @@ input {
   font-family: "Cambria";
 }
 
-.social_links{
+.social_links {
   border-right: 1px solid black;
-  border-right-color: rgba(255, 102, 0,0.5);
+  border-right-color: rgba(255, 102, 0, 0.5);
 }
 
-.basic-details{
-  margin: 10px 0px!important;
+.basic-details {
+  margin: 10px 0px !important;
 }
 
 .user-profile-edit .social_links .social_link .social_icon,
@@ -175,7 +177,8 @@ input {
   margin: 5px 0;
 }
 
-.notable_work_save button{
+.notable_work_save button,
+.add_word_save_btn button {
   margin-left: 20px;
   padding: 8px 38px;
   background-color: #5eac1e;
@@ -186,14 +189,15 @@ input {
   transition: 0.3s;
 }
 
-.notable_work_save button:hover{
+.notable_work_save button:hover,
+.add_word_save_btn button:hover {
   border-radius: 0px;
   background-color: #71e215;
   color: black;
-
 }
 
-.notable_work_save p {
+.notable_work_save p,
+.add_word_save_btn p {
   margin-right: 25px;
   margin: 0;
 }
@@ -205,6 +209,10 @@ input {
   padding-bottom: 20px;
   text-align: center;
   align-items: center;
+}
+
+.add_word_save_btn {
+  text-align: right;
 }
 
 .social_url_inp {
@@ -221,34 +229,44 @@ input {
   transition: 0.1s linear;
 }
 
-.add-social-url button:hover{
+.add-social-url button:hover {
   transform: scale(1.2);
   box-shadow: 0px 0px 2px 0px black;
 }
 
-.notable-works{
+.add-notable-btn button {
+  margin-top: 5px !important;
+  border-radius: 5px;
+  border-width: 0;
+  transition: 0.1s linear;
+}
+
+.add-notable-btn button:hover {
+  transform: scale(1.2);
+  box-shadow: 0px 0px 2px 0px black;
+}
+
+.notable-works {
   margin-bottom: 32px;
 }
 
-.notable_work_save p{
+.notable_work_save p {
   color: rgb(0, 255, 0);
 }
 
 .my-works {
-  border: 1px solid rgb(255, 102, 0,0.65);
+  border: 1px solid rgb(255, 102, 0, 0.65);
   margin-bottom: 46px;
-  padding: 16px 64px!important;
+  padding: 16px 64px !important;
 }
 
-.work-btn{
+.work-btn {
   text-align: center;
 }
 
-.my_works_url_title{
-  padding: 0!important;
-  
+.my_works_url_title {
+  padding: 0 !important;
 }
-
 
 .work_title button {
   margin-left: 10px;
@@ -262,28 +280,28 @@ input {
   margin: 10px 0px;
 }
 
-.my_works_url_title{
+.my_works_url_title {
   align-items: center;
 }
 
-.my_works_url_title button{
+.my_works_url_title button {
   border-width: 0;
   padding: 3px 6px;
   transition: 0.2s;
   border-radius: 2px;
 }
 
-.my_works_url_title button:hover{
+.my_works_url_title button:hover {
   transform: scale(1.15);
   box-shadow: 0px 0px 3px 0px black;
 }
 
 .switch-toggle {
-  margin-bottom: 50px!important;
+  margin-bottom: 50px !important;
   height: 40px;
 }
 
-.switch-toggle label{
+.switch-toggle label {
   position: absolute;
   top: -30px;
   margin: 0;
@@ -303,14 +321,13 @@ input {
   border-radius: 20px;
   margin: 0;
   cursor: pointer;
-  box-shadow: inset -8px -8px 15px rgba(255,255,255,.6),
-              inset 10px 10px 10px rgba(0,0,0, .25);
-  
+  box-shadow: inset -8px -8px 15px rgba(255, 255, 255, 0.6),
+    inset 10px 10px 10px rgba(0, 0, 0, 0.25);
 }
 
 .switch-toggle input[type="checkbox"] + label::before {
   position: absolute;
-  content: 'NO';
+  content: "NO";
   font-size: 13px;
   text-align: center;
   line-height: 25px;
@@ -320,19 +337,16 @@ input {
   height: 25px;
   border-radius: 20px;
   background-color: #d1dad3;
-  transition: .3s ease-in-out;
+  transition: 0.3s ease-in-out;
 }
 
 .switch-toggle input[type="checkbox"]:checked + label::before {
   left: 50%;
-  content: 'YES';
+  content: "YES";
   color: #fff;
   background-color: #00b33c;
-  box-shadow: -3px -3px 5px rgba(255,255,255,.5),
-              3px 3px 5px #00b33c;
+  box-shadow: -3px -3px 5px rgba(255, 255, 255, 0.5), 3px 3px 5px #00b33c;
 }
-
-
 
 /*Icon Colors*/
 
@@ -368,15 +382,15 @@ input {
   color: #0077b5;
 }
 
-.fa-plus{
+.fa-plus {
   color: green;
 }
 
-.fa-minus{
+.fa-minus {
   color: red;
 }
 
-.bi-trash{
+.bi-trash {
   color: red;
 }
 
