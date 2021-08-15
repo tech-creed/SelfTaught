@@ -32,8 +32,12 @@ const LandingPage = () => {
               <img src={Icon2} alt="icon_2_2" />
             </div>
           </div>
-
+          
           <div className="main-content">
+          <form action="user/upload_user_dp" method='POST' enctype="multipart/form-data">
+            <input type='file' name="usr_img" id="usr_img" accept="image/*"/>
+            <button type='sumbit'>Sumbit</button>
+          </form>
             <h1>TEACH YOURSELF</h1>
             <p id="main-content-para">
               Proin egestas arcu scelerisque ligula dapibus laoree
